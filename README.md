@@ -16,14 +16,16 @@ go mod init
 go get "github.com/jinzhu/gorm"
 go get "github.com/jinzhu/gorm/dialects/mysql"
 go get "github.com/gorilla/mux"
-'''
+```
   
 3. **Set up the MySQL database**:
 - Create a new MySQL database named `bookstore`.
 
 4. **Run the application**:
-- go build
-- go run main.go
+```bash
+go build
+go run main.go
+```
 ## Usage
 The API endpoints include:
 - `POST /books`: Add a new book to the bookstore.
