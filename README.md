@@ -18,8 +18,11 @@ go get "github.com/jinzhu/gorm/dialects/mysql"
 go get "github.com/gorilla/mux"
 ```
   
-3. **Set up the MySQL database**:
-- Create a new MySQL database named `bookstore`.
+3. **Set up the MySQL database container**:
+```bash
+docker pull container-registry.oracle.com/mysql/community-server:latest
+docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=password -p 3306:3306 -d mysql:latest
+```
 
 4. **Run the application**:
 ```bash
