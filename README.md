@@ -10,10 +10,13 @@ This project is a RESTful API for managing a bookstore. It allows users to perfo
 ## Setup
 1. **Clone the repository**
    
-2. **Install dependencies**:
-- go mod init go get “github.com/jinzhu/gorm”
-- go get “github.com/jinzhu/gorm/dialects/mysql”
-- go get “github.com/gorilla/mux”
+2. **Initialize the Go module and install dependencies**:
+```bash
+go mod init
+go get "github.com/jinzhu/gorm"
+go get "github.com/jinzhu/gorm/dialects/mysql"
+go get "github.com/gorilla/mux"
+'''
   
 3. **Set up the MySQL database**:
 - Create a new MySQL database named `bookstore`.
